@@ -56,8 +56,8 @@
         <td>{{ I18N[lang].buildEnvironment }}</td>
         <td>
           <select v-model="selectedEnv">
-            <option value="native">{{ I18N[lang].buildEnvNative }}</option>
             <option value="spc">{{ I18N[lang].buildEnvSpc }}</option>
+            <option value="native">{{ I18N[lang].buildEnvNative }}</option>
             <option value="docker" v-if="selectedSystem !== 'windows'">{{ I18N[lang].buildEnvDocker }}</option>
           </select>
         </td>
@@ -325,7 +325,7 @@ const libDisableList = ref([]);
 const checkedTargets = ref(['cli']);
 
 // chosen env
-const selectedEnv = ref('native');
+const selectedEnv = ref('spc');
 
 // chosen php version
 const selectedPhpVersion = ref('8.2');
