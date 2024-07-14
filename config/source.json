@@ -176,6 +176,7 @@
         "type": "filelist",
         "url": "https://ftp.gnu.org/pub/gnu/gettext/",
         "regex": "/href=\"(?<file>gettext-(?<version>[^\"]+)\\.tar\\.xz)\"/",
+        "provide-pre-built": true,
         "license": {
             "type": "file",
             "path": "COPYING"

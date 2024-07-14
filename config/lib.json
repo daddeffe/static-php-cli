@@ -92,9 +92,7 @@
             "libintl.a"
         ],
         "lib-depends": [
-            "libiconv"
-        ],
-        "lib-suggests": [
+            "libiconv",
             "ncurses",
             "libxml2"
         ],
