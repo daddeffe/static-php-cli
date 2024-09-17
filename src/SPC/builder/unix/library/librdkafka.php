@@ -19,7 +19,7 @@ trait librdkafka
         shell()->cd($this->source_dir)
             ->exec(
                 './configure ' .
-                '--enable-static --disable-shared --disable-curl --disable-sasl --disable-valgrind ' .
+                '--enable-static --disable-shared --disable-curl --disable-sasl --disable-valgrind  --disable-ssl --disable-gssapi --disable-zlib ' .
                 '--prefix='
             )
             ->exec('make clean')
