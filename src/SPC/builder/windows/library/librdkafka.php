@@ -34,10 +34,6 @@ class librdkafka extends WindowsLibraryBase
                 "-DENABLE_ZLIB_COMPRESSION={$zlib} " .
                 '-DLIBRDKAFKA_TESTS=OFF ' .
                 '-DCMAKE_INSTALL_PREFIX=' . BUILD_ROOT_PATH . ' '
-            )
-            ->execWithWrapper(
-                $this->builder->makeSimpleWrapper('cmake'),
-                "--build build --config Release --target install -j{$this->builder->concurrency}"
             );
     }
 }
