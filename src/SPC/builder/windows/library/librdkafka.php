@@ -30,8 +30,11 @@ class librdkafka extends WindowsLibraryBase
                 '-DBUILD_SHARED_LIBS=OFF ' .
                 '-DLIBRDKAFKA_STATICLIB ' .
                 '-DLIBRDKAFKA_STATIC=ON ' .
-                '-DLIBRDKAFKA_SHARED=OFF ' .
+ //               '-DLIBRDKAFKA_SHARED=OFF ' .
                 "-DENABLE_ZLIB_COMPRESSION={$zlib} " .
+                "-DENABLE_CURL=OFF" .
+                "-DENABLE_SASL=OFF" .
+                "-DENABLE_SSL=OFF" .
                 '-DLIBRDKAFKA_TESTS=OFF ' .
                 '-DCMAKE_INSTALL_PREFIX=' . BUILD_ROOT_PATH . ' '
             );
